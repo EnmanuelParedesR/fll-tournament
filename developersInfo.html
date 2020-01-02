@@ -50,10 +50,10 @@
   </nav>
 
   <!-- Page Content -->
-  <div class="container">
-
+  <main role="main" class="container">
     <div class="row">
-      <div class="col-md-3">
+
+      <div class="col-sm-3">
 
         <div class="my-3 p-3 bg-white rounded box-shadow">
           <h6 class="border-bottom border-gray pb-2 mb-0">Judge Recent updates</h6>
@@ -163,240 +163,109 @@
 
       <div class="col-md-9">
 
+        <div class="d-flex align-items-center p-3 my-3 text-white-50 bg-purple rounded box-shadow">
+          <img class="mr-3" src="images\logo.png" alt="" width="48" height="48">
+          <div class="lh-100">
+            <h6 class="mb-0 text-white lh-100">FLL Developers Information</h6>
+            <small>Since 2011</small>
+          </div>
+        </div>
+
         <div class="row">
           <div class="col-md-12">
-            <h3 class="form-title mt-4">Teams
 
-              <button type="button" class="btn btn-secondary float-right  ml-3" data-toggle="modal"
-                data-target="#exampleModalCenter">Agregar</button>
+            <div class="list-group">
+              <h4>Developers Commands</h4>
 
-              <button type="button" class="btn btn-warning float-right" data-toggle="modal"
-                data-target="#modalPuntuacion">Puntuar</button>
+              <a href="#" class="list-group-item list-group-item-action flex-column align-items-start">
 
-            </h3>
+                <div class="d-flex w-100 justify-content-between">
+                  <h5 class="mb-1">Do SQL queries and updates</h5>
+                </div>
+
+              </a>
+              <a href="#" class="list-group-item list-group-item-action flex-column align-items-start">
+                <div class="d-flex w-100 justify-content-between">
+                  <h5 class="mb-1">Import data from a database dump into the current database.</h5>
+
+                </div>
+                <div class="form-group">
+
+                  <input type="file" class="form-control-file" id="exampleFormControlFile1">
+                </div>
+
+                <button type="button" class="btn btn-primary">
+
+                  Import Database
+                </button>
+              </a>
+
+              <a href="#" class="list-group-item list-group-item-action flex-column align-items-start">
+                <div class="d-flex w-100 justify-content-between">
+                  <h5 class="mb-1">Replace the current challenge descriptor. Will succeed if there are no changes to the
+                    structure of the database.</h5>
+
+                </div>
+                <div class="form-group">
+
+                  <input type="file" class="form-control-file" id="exampleFormControlFile1">
+                </div>
+
+                <button type="button" class="btn btn-primary">
+
+                  Import Database
+                </button>
+              </a>
+
+            </div>
           </div>
+        </div>
+
+        <div class="row mt-3">
           <div class="col-md-12">
-            <table class="table table-striped mt-4">
-              <thead class="thead-dark">
-                <tr>
-                  <th scope="col">ID</th>
-                  <th scope="col">Nombre</th>
-                  <th scope="col">Organización</th>
-                  <th scope="col">Torneos</th>
-                  <th scope="col">Puntuar</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <th scope="row">1</th>
-                  <td>Los fuertes</td>
-                  <td>los fuertes inc</td>
-                  <td>TORNEO DE LEGOS</td>
-                  <td>
-                    <div class="form-check">
-                      <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                    </div>
-                  </td>
-                </tr>
-                <tr>
-                  <th scope="row">2</th>
-                  <td>Los Unicornios</td>
-                  <td>Thornton</td>
-                  <td>TORNEO DE LEGOS</td>
-                  <td>
-                    <div class="form-check">
-                      <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                    </div>
-                  </td>
-                </tr>
-                <tr>
-                  <th scope="row">3</th>
-                  <td>Los unicos</td>
-                  <td>the Bird</td>
-                  <td>TORNEO DE LEGOS</td>
-                  <td>
-                    <div class="form-check">
-                      <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                    </div>
-                  </td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
 
-        </div>
-      </div>
-    </div>
-  </div>
+            <h5>System Information</h5>
 
+            <ul>
+              <li>
+                <p> inside.test: null -- false</p>
+              </li>
 
-  <div class="modal fade" id="modalPuntuacion" role="dialog" aria-modal="true">
-    <div class="modal-dialog modal-lg" role="document">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title">Puntuación</h5>
-          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-            <span aria-hidden="true">×</span>
-          </button>
-        </div>
-        <div class="modal-body">
-          <div class="row">
-            <div class="col-md-12">
-              <table class="table table-striped mt-4">
-                <thead class="thead-dark">
-                  <tr>
-                    <th scope="col">ID</th>
-                    <th scope="col">Nombre</th>
-                    <th scope="col">Descripción</th>
-                    <th scope="col">Puntuación</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <th scope="row">1</th>
-                    <td>Mark</td>
-                    <td>HOLA</td>
-                    <td>
-                      25
-                    </td>
-                  </tr>
-                  <tr>
-                    <th scope="row">2</th>
-                    <td>Jacob</td>
-                    <td>Thornton</td>
-                    <td>
-                      20
-                    </td>
-                  </tr>
-                  <tr>
-                    <th scope="row">3</th>
-                    <td>Larry</td>
-                    <td>the Bird</td>
-                    <td>
-                      20
-                    </td>
-                  </tr>
-                </tbody>
-              </table>
-            </div>
+              <li>
+                <p> Java Version: 1.8.0_171</p>
+              </li>
+              <li>
+                <p> Java Vendor: Oracle Corporation</p>
+              </li>
+              <li>
+                <p>OS Name: Windows Server 2012 R2</p>
+              </li>
+              <li>
+                <p>OS Achitecture: amd64</p>
+              </li>
+              <li>
+                <p> inside.test: null -- false</p>
+              </li>
+              <li>
+                <p> OS Version: 6.3</p>
+              </li>
+              <li>
+                <p> Servlet API: 3.1</p>
+              </li>
+              <li>
+                <p> Servlet container: Apache Tomcat/8.5.11</p>
+              </li>
+            </ul>
           </div>
         </div>
-        <div class="modal-footer text-left">
-          <button type="button" class="btn btn-info">Confirmar Puntuaciones</button>
-          <button type="button" class="btn btn-secondary" data-dismiss="modal">
-            Cerrar
-          </button>
-        </div>
-        <br>
+
+
       </div>
     </div>
-  </div>
-
-  <div class="modal fade" id="exampleModalCenter" role="dialog" aria-modal="true">
-    <div class="modal-dialog modal-lg" role="document">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title">Datos del Equipo</h5>
-          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-            <span aria-hidden="true">×</span>
-          </button>
-        </div>
-        <div class="modal-body">
-          <div class="row">
-
-            <div class="col-md-6">
-              <div class="form-group">
-                <label for="IdMaquinaria">Código del Equipo:</label>
-                <input type="text" id="IdMaquinaria" class="form-control">
-              </div>
-            </div>
-
-            <div class="col-md-6">
-              <div class="form-group">
-                <label for="IdMaquinaria">Equipo:</label>
-                <input type="text" id="IdMaquinaria" class="form-control">
-              </div>
-            </div>
-
-            <div class="col-md-6">
-              <div class="form-group">
-                <label for="monto-provision">Organización:</label>
-                <input type="text" id="IdMaquinaria" class="form-control">
-              </div>
-            </div>
-
-            <div class="col-md-6">
-              <div class="form-group">
-                <label for="monto-provision">Torneos:</label>
-                <select id="maquinaria" class="form-control ">
-                  <option label="Papa TORNEO" value="string:Papa TORNEO">Papa TORNEO</option>
-                  <option label="Mama TORNEO" value="string:Mama TORNEO" selected="selected">Mama TORNEO</option>
-                </select>
-              </div>
-            </div>
-
-            <div class="col-md-6">
-              <div class="form-group">
-                <label for="monto-provision">Jueces:</label>
-                <select id="maquinaria" class="form-control ">
-                  <option label="Papa TORNEO" value="string:Papa TORNEO">Papa TORNEO</option>
-                  <option label="Mama TORNEO" value="string:Mama TORNEO" selected="selected">Mama TORNEO</option>
-                </select>
-              </div>
-            </div>
-
-            <div class="col-md-6">
-              <div class="form-group">
-                <label for="monto-provision">Salón:</label>
-                <select id="maquinaria" class="form-control ">
-                  <option label="Papa TORNEO" value="string:Papa TORNEO">Papa TORNEO</option>
-                  <option label="Mama TORNEO" value="string:Mama TORNEO" selected="selected">Mama TORNEO</option>
-                </select>
-              </div>
-            </div>
-
-          </div>
-        </div>
-        <div class="modal-footer text-left">
-          <button type="button" class="btn btn-primary">Guardar Cambios</button>
-          <button type="button" class="btn btn-secondary" data-dismiss="modal">
-            Cerrar</button>
-        </div>
-        <br>
-      </div>
-    </div>
-  </div>
-
-  <!-- <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
-    aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered" role="document">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title" id="exampleModalLongTitle">Equipo</h5>
-          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-            <span aria-hidden="true">&times;</span>
-          </button>
-        </div>
-        <div class="modal-body">
-          <div class="row">
-
-            <div class="col-md-12">
-
-            </div>
-
-          </div>
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-          <button type="button" class="btn btn-primary">Guardar</button>
-        </div>
-      </div>
-    </div>
-  </div> -->
-  <!-- /.container -->
+  </main>
 
   <!-- Footer -->
-  <footer class="py-5 bg-dark">
+  <footer class="py-5 bg-dark mt-5">
     <div class="container">
       <p class="m-0 text-center text-white">Copyright &copy; FLL 2019</p>
     </div>

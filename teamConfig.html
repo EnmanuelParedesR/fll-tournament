@@ -50,9 +50,9 @@
   </nav>
 
   <!-- Page Content -->
-  <div class="container">
-
+  <main role="main" class="container">
     <div class="row">
+
       <div class="col-md-3">
 
         <div class="my-3 p-3 bg-white rounded box-shadow">
@@ -161,80 +161,59 @@
         </div>
       </div>
 
-      <div class="col-md-9">
-
+      <div class="col-md-9 mt-4">
+        <h4>Teams Configuration</h4>
         <div class="row">
-          <div class="col-md-12">
-            <h3 class="form-title mt-4">Teams
-
-              <button type="button" class="btn btn-secondary float-right  ml-3" data-toggle="modal"
-                data-target="#exampleModalCenter">Agregar</button>
-
-              <button type="button" class="btn btn-warning float-right" data-toggle="modal"
-                data-target="#modalPuntuacion">Puntuar</button>
-
-            </h3>
-          </div>
           <div class="col-md-12">
             <table class="table table-striped mt-4">
               <thead class="thead-dark">
                 <tr>
                   <th scope="col">ID</th>
-                  <th scope="col">Nombre</th>
-                  <th scope="col">Organización</th>
-                  <th scope="col">Torneos</th>
-                  <th scope="col">Puntuar</th>
+                  <th scope="col">Team</th>
+                  <th scope="col">Edit</th>
+
                 </tr>
               </thead>
               <tbody>
                 <tr>
-                  <th scope="row">1</th>
+                  <th>1</th>
                   <td>Los fuertes</td>
-                  <td>los fuertes inc</td>
-                  <td>TORNEO DE LEGOS</td>
+
                   <td>
-                    <div class="form-check">
-                      <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                    </div>
+                    <button type="button" class="btn btn-success " data-toggle="modal"
+                      data-target="#modalPuntuacion">Edit</button>
                   </td>
                 </tr>
                 <tr>
-                  <th scope="row">2</th>
+                  <th>2</th>
                   <td>Los Unicornios</td>
-                  <td>Thornton</td>
-                  <td>TORNEO DE LEGOS</td>
+
                   <td>
-                    <div class="form-check">
-                      <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                    </div>
+                    <button type="button" class="btn btn-success " data-toggle="modal"
+                      data-target="#modalPuntuacion">Edit</button>
                   </td>
                 </tr>
                 <tr>
-                  <th scope="row">3</th>
+                  <th>3</th>
                   <td>Los unicos</td>
-                  <td>the Bird</td>
-                  <td>TORNEO DE LEGOS</td>
                   <td>
-                    <div class="form-check">
-                      <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                    </div>
+                    <button type="button" class="btn btn-success " data-toggle="modal"
+                      data-target="#modalPuntuacion">Edit</button>
                   </td>
                 </tr>
               </tbody>
             </table>
           </div>
-
         </div>
       </div>
     </div>
-  </div>
-
+  </main>
 
   <div class="modal fade" id="modalPuntuacion" role="dialog" aria-modal="true">
     <div class="modal-dialog modal-lg" role="document">
       <div class="modal-content">
         <div class="modal-header">
-          <h5 class="modal-title">Puntuación</h5>
+          <h5 class="modal-title">Team Properties</h5>
           <button type="button" class="close" data-dismiss="modal" aria-label="Close">
             <span aria-hidden="true">×</span>
           </button>
@@ -242,161 +221,76 @@
         <div class="modal-body">
           <div class="row">
             <div class="col-md-12">
-              <table class="table table-striped mt-4">
-                <thead class="thead-dark">
-                  <tr>
-                    <th scope="col">ID</th>
-                    <th scope="col">Nombre</th>
-                    <th scope="col">Descripción</th>
-                    <th scope="col">Puntuación</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <th scope="row">1</th>
-                    <td>Mark</td>
-                    <td>HOLA</td>
-                    <td>
-                      25
-                    </td>
-                  </tr>
-                  <tr>
-                    <th scope="row">2</th>
-                    <td>Jacob</td>
-                    <td>Thornton</td>
-                    <td>
-                      20
-                    </td>
-                  </tr>
-                  <tr>
-                    <th scope="row">3</th>
-                    <td>Larry</td>
-                    <td>the Bird</td>
-                    <td>
-                      20
-                    </td>
-                  </tr>
-                </tbody>
-              </table>
+              <form>
+                <div class="form-row">
+                  <div class="form-group col-md-6">
+                    <label for="inputEmail4">Team Name</label>
+                    <input type="email" class="form-control" id="inputEmail4" placeholder="Los Duros">
+                  </div>
+                  <div class="form-group col-md-6">
+                    <label for="inputPassword4">Members</label>
+                    <input type="password" class="form-control" id="inputPassword4" placeholder="Eduardo, Plinio">
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label for="inputAddress">Organization</label>
+                  <input type="text" class="form-control" id="inputAddress" placeholder="Organizacion los Duros">
+                </div>
+
+                <div class="form-row">
+                  <div class="form-group col-md-6">
+                    <label for="inputCity">City</label>
+                    <input type="text" class="form-control" id="inputCity">
+                  </div>
+                  <div class="form-group col-md-4">
+                    <label for="inputState">State</label>
+                    <select id="inputState" class="form-control">
+                      <option selected>Choose...</option>
+                      <option>...</option>
+                    </select>
+                  </div>
+
+
+                </div>
+                <div class="form-row">
+
+                  <div class="form-group col-md-12">
+                    <h6>Tournament</h6>
+                    <div class="form-check">
+                      <input class="form-check-input" type="checkbox" id="gridCheck">
+                      <label class="form-check-label" for="gridCheck">
+                        DROP
+                      </label>
+                    </div>
+
+                    <div class="form-check">
+                      <input class="form-check-input" type="checkbox" id="gridCheck">
+                      <label class="form-check-label" for="gridCheck">
+                        FLL DR Tournament
+                      </label>
+                    </div>
+                  </div>
+                </div>
+              </form>
             </div>
           </div>
         </div>
         <div class="modal-footer text-left">
-          <button type="button" class="btn btn-info">Confirmar Puntuaciones</button>
+          <button type="button" class="btn btn-danger" data-dismiss="modal">
+            Delete Team
+          </button>
+          <button type="button" class="btn btn-info">Confirm Changes</button>
           <button type="button" class="btn btn-secondary" data-dismiss="modal">
-            Cerrar
+            Close
           </button>
         </div>
         <br>
       </div>
     </div>
   </div>
-
-  <div class="modal fade" id="exampleModalCenter" role="dialog" aria-modal="true">
-    <div class="modal-dialog modal-lg" role="document">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title">Datos del Equipo</h5>
-          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-            <span aria-hidden="true">×</span>
-          </button>
-        </div>
-        <div class="modal-body">
-          <div class="row">
-
-            <div class="col-md-6">
-              <div class="form-group">
-                <label for="IdMaquinaria">Código del Equipo:</label>
-                <input type="text" id="IdMaquinaria" class="form-control">
-              </div>
-            </div>
-
-            <div class="col-md-6">
-              <div class="form-group">
-                <label for="IdMaquinaria">Equipo:</label>
-                <input type="text" id="IdMaquinaria" class="form-control">
-              </div>
-            </div>
-
-            <div class="col-md-6">
-              <div class="form-group">
-                <label for="monto-provision">Organización:</label>
-                <input type="text" id="IdMaquinaria" class="form-control">
-              </div>
-            </div>
-
-            <div class="col-md-6">
-              <div class="form-group">
-                <label for="monto-provision">Torneos:</label>
-                <select id="maquinaria" class="form-control ">
-                  <option label="Papa TORNEO" value="string:Papa TORNEO">Papa TORNEO</option>
-                  <option label="Mama TORNEO" value="string:Mama TORNEO" selected="selected">Mama TORNEO</option>
-                </select>
-              </div>
-            </div>
-
-            <div class="col-md-6">
-              <div class="form-group">
-                <label for="monto-provision">Jueces:</label>
-                <select id="maquinaria" class="form-control ">
-                  <option label="Papa TORNEO" value="string:Papa TORNEO">Papa TORNEO</option>
-                  <option label="Mama TORNEO" value="string:Mama TORNEO" selected="selected">Mama TORNEO</option>
-                </select>
-              </div>
-            </div>
-
-            <div class="col-md-6">
-              <div class="form-group">
-                <label for="monto-provision">Salón:</label>
-                <select id="maquinaria" class="form-control ">
-                  <option label="Papa TORNEO" value="string:Papa TORNEO">Papa TORNEO</option>
-                  <option label="Mama TORNEO" value="string:Mama TORNEO" selected="selected">Mama TORNEO</option>
-                </select>
-              </div>
-            </div>
-
-          </div>
-        </div>
-        <div class="modal-footer text-left">
-          <button type="button" class="btn btn-primary">Guardar Cambios</button>
-          <button type="button" class="btn btn-secondary" data-dismiss="modal">
-            Cerrar</button>
-        </div>
-        <br>
-      </div>
-    </div>
-  </div>
-
-  <!-- <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
-    aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered" role="document">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title" id="exampleModalLongTitle">Equipo</h5>
-          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-            <span aria-hidden="true">&times;</span>
-          </button>
-        </div>
-        <div class="modal-body">
-          <div class="row">
-
-            <div class="col-md-12">
-
-            </div>
-
-          </div>
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-          <button type="button" class="btn btn-primary">Guardar</button>
-        </div>
-      </div>
-    </div>
-  </div> -->
-  <!-- /.container -->
 
   <!-- Footer -->
-  <footer class="py-5 bg-dark">
+  <footer class="py-5 bg-dark mt-5">
     <div class="container">
       <p class="m-0 text-center text-white">Copyright &copy; FLL 2019</p>
     </div>

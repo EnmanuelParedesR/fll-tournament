@@ -50,10 +50,10 @@
   </nav>
 
   <!-- Page Content -->
-  <div class="container">
-
+  <main role="main" class="container">
     <div class="row">
-      <div class="col-md-3">
+
+      <div class="col-sm-3">
 
         <div class="my-3 p-3 bg-white rounded box-shadow">
           <h6 class="border-bottom border-gray pb-2 mb-0">Judge Recent updates</h6>
@@ -163,240 +163,262 @@
 
       <div class="col-md-9">
 
+        <div class="d-flex align-items-center p-3 my-3 text-white-50 bg-purple rounded box-shadow">
+          <img class="mr-3" src="images\logo.png" alt="" width="48" height="48">
+          <div class="lh-100">
+            <h6 class="mb-0 text-white lh-100">FLL Administration</h6>
+            <small>Since 2011</small>
+          </div>
+        </div>
+
         <div class="row">
           <div class="col-md-12">
-            <h3 class="form-title mt-4">Teams
 
-              <button type="button" class="btn btn-secondary float-right  ml-3" data-toggle="modal"
-                data-target="#exampleModalCenter">Agregar</button>
+            <h5>Before tournament Day</h5>
 
-              <button type="button" class="btn btn-warning float-right" data-toggle="modal"
-                data-target="#modalPuntuacion">Puntuar</button>
+            <dl class="row mt-4">
+              <dt class="col-sm-3">Upload the datafile for teams.</dt>
+              <dd class="col-sm-9">This file can be tab separated or comma separated or an Excel file (xls and xlsx
+                supported).</dd>
 
-            </h3>
+              <dt class="col-sm-3 mt-3 text-truncate">Add a team</dt>
+              <dd class="col-sm-9 mt-3"><a href="#">Help</a></dd>
+
+              <dt class="col-sm-3 mt-3">Add or Edit Tournament</dt>
+              <dd class="col-sm-9 mt-3"><a href="#">Help</a></dd>
+
+              <dt class="col-sm-3 mt-3">Display Tournament Assignments</dt>
+              <dd class="col-sm-9"><a href="#">Help</a></dd>
+
+              <dt class="col-sm-3 mt-3">Current Tournament</dt>
+              <dd class="col-sm-9 mt-3">
+
+                <div class="form-group">
+
+                  <select class="form-control" id="exampleFormControlSelect1">
+                    <option>FLL DOMINICAN REPUBLIC 2018/2019</option>
+                    <option>FLL DOMINICAN REPUBLIC 2018/2019</option>
+                    <option>FLL DOMINICAN REPUBLIC 2018/2019</option>
+                    <option>FLL DOMINICAN REPUBLIC 2018/2019</option>
+                  </select>
+                </div>
+
+                <button type="button" class="btn btn-primary">
+
+                  Change Tournament
+                </button>
+              </dd>
+
+              <dt class="col-sm-3 mt-3">Upload schedule for current tournament <a href="#">Help</a></dt>
+              <dd class="col-sm-9 mt-3">
+
+                <div class="form-group">
+
+                  <input type="file" class="form-control-file" id="exampleFormControlFile1">
+                </div>
+
+                <button type="button" class="btn btn-primary">
+
+                  Upload Schedule
+                </button>
+              </dd>
+
+
+              <dt class="col-sm-12 mt-3"><a href="#">Change award group assignments for the current tournament.
+                  [help]</a>
+              </dt>
+
+              <dt class="col-sm-12 mt-3"><a href="#">Change judging groups assignments for the current tournament.
+                  [help]</a>
+              </dt>
+
+            </dl>
+
           </div>
+        </div>
+
+        <div class="row mt-5">
           <div class="col-md-12">
-            <table class="table table-striped mt-4">
-              <thead class="thead-dark">
-                <tr>
-                  <th scope="col">ID</th>
-                  <th scope="col">Nombre</th>
-                  <th scope="col">Organización</th>
-                  <th scope="col">Torneos</th>
-                  <th scope="col">Puntuar</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <th scope="row">1</th>
-                  <td>Los fuertes</td>
-                  <td>los fuertes inc</td>
-                  <td>TORNEO DE LEGOS</td>
-                  <td>
-                    <div class="form-check">
-                      <input type="checkbox" class="form-check-input" id="exampleCheck1">
+
+            <h5>Tournament day</h5>
+
+            <dl class="row mt-4">
+              <dt class="col-sm-3">Scoring display text: </dt>
+
+              <dd class="col-sm-9 mt-3">
+
+                <div class="form-group">
+                  <input type="text" class="form-control" id="exampleFormControlSelect1" />
+                </div>
+
+                <button type="button" class="btn btn-primary">
+
+                  Change Text
+                </button>
+              </dd>
+
+              <dt class="col-sm-12 mt-3"> <a href="#">Assign Judges</a></dt>
+
+              <dt class="col-sm-3 mt-3"><a href="#">Assign Table Labels
+                  [help]</a>
+              </dt>
+              <dd class="col-sm-9 mt-3">
+
+                <p>
+                  (for scoresheet printing during head to head)
+                </p>
+              </dd>
+
+              <dt class="col-sm-12 mt-3"><a href="#">Edit team data
+                  [help]</a>
+              </dt>
+              <dt class="col-sm-12 mt-3"><a href="#">Remote control of display</a>
+              </dt>
+
+
+              <dt class="col-sm-3 mt-3">Subjective Scoring: </dt>
+
+              <dd class="col-sm-9 mt-3">
+
+
+                <ul>
+                  <li>
+                    <a href="#">
+                      Subjective Web application
+                    </a>
+                  </li>
+
+                  <li>
+                    <p>
+                      <a href="#">
+                        Download the datafile for subjective score entry.
+                      </a>
+                      Should be downloaded after each subjective score upload to lessen chance of data loss due to
+                      overwrite.
+                    </p>
+
+                  </li>
+
+                  <li>
+                    <p>
+                      <a href="#">
+                        Subjective Scoring Application
+                      </a>
+                      (Executable Jar file) - run with "java -jar subjective-app.jar"
+                    </p>
+                  </li>
+
+                  <li>
+                    <p>
+
+                      Upload the datafile for subjective scores.
+                    </p>
+
+                    <div class="form-group">
+
+                      <input type="file" class="form-control-file" id="exampleFormControlFile1">
                     </div>
-                  </td>
-                </tr>
-                <tr>
-                  <th scope="row">2</th>
-                  <td>Los Unicornios</td>
-                  <td>Thornton</td>
-                  <td>TORNEO DE LEGOS</td>
-                  <td>
-                    <div class="form-check">
-                      <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                    </div>
-                  </td>
-                </tr>
-                <tr>
-                  <th scope="row">3</th>
-                  <td>Los unicos</td>
-                  <td>the Bird</td>
-                  <td>TORNEO DE LEGOS</td>
-                  <td>
-                    <div class="form-check">
-                      <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                    </div>
-                  </td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
 
-        </div>
-      </div>
-    </div>
-  </div>
+                    <button type="button" class="btn btn-primary">
+
+                      Upload
+                    </button>
+
+                  </li>
+                </ul>
 
 
-  <div class="modal fade" id="modalPuntuacion" role="dialog" aria-modal="true">
-    <div class="modal-dialog modal-lg" role="document">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title">Puntuación</h5>
-          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-            <span aria-hidden="true">×</span>
-          </button>
-        </div>
-        <div class="modal-body">
-          <div class="row">
-            <div class="col-md-12">
-              <table class="table table-striped mt-4">
-                <thead class="thead-dark">
-                  <tr>
-                    <th scope="col">ID</th>
-                    <th scope="col">Nombre</th>
-                    <th scope="col">Descripción</th>
-                    <th scope="col">Puntuación</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <th scope="row">1</th>
-                    <td>Mark</td>
-                    <td>HOLA</td>
-                    <td>
-                      25
-                    </td>
-                  </tr>
-                  <tr>
-                    <th scope="row">2</th>
-                    <td>Jacob</td>
-                    <td>Thornton</td>
-                    <td>
-                      20
-                    </td>
-                  </tr>
-                  <tr>
-                    <th scope="row">3</th>
-                    <td>Larry</td>
-                    <td>the Bird</td>
-                    <td>
-                      20
-                    </td>
-                  </tr>
-                </tbody>
-              </table>
-            </div>
-          </div>
-        </div>
-        <div class="modal-footer text-left">
-          <button type="button" class="btn btn-info">Confirmar Puntuaciones</button>
-          <button type="button" class="btn btn-secondary" data-dismiss="modal">
-            Cerrar
-          </button>
-        </div>
-        <br>
-      </div>
-    </div>
-  </div>
+              </dd>
 
-  <div class="modal fade" id="exampleModalCenter" role="dialog" aria-modal="true">
-    <div class="modal-dialog modal-lg" role="document">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title">Datos del Equipo</h5>
-          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-            <span aria-hidden="true">×</span>
-          </button>
-        </div>
-        <div class="modal-body">
-          <div class="row">
-
-            <div class="col-md-6">
-              <div class="form-group">
-                <label for="IdMaquinaria">Código del Equipo:</label>
-                <input type="text" id="IdMaquinaria" class="form-control">
-              </div>
-            </div>
-
-            <div class="col-md-6">
-              <div class="form-group">
-                <label for="IdMaquinaria">Equipo:</label>
-                <input type="text" id="IdMaquinaria" class="form-control">
-              </div>
-            </div>
-
-            <div class="col-md-6">
-              <div class="form-group">
-                <label for="monto-provision">Organización:</label>
-                <input type="text" id="IdMaquinaria" class="form-control">
-              </div>
-            </div>
-
-            <div class="col-md-6">
-              <div class="form-group">
-                <label for="monto-provision">Torneos:</label>
-                <select id="maquinaria" class="form-control ">
-                  <option label="Papa TORNEO" value="string:Papa TORNEO">Papa TORNEO</option>
-                  <option label="Mama TORNEO" value="string:Mama TORNEO" selected="selected">Mama TORNEO</option>
-                </select>
-              </div>
-            </div>
-
-            <div class="col-md-6">
-              <div class="form-group">
-                <label for="monto-provision">Jueces:</label>
-                <select id="maquinaria" class="form-control ">
-                  <option label="Papa TORNEO" value="string:Papa TORNEO">Papa TORNEO</option>
-                  <option label="Mama TORNEO" value="string:Mama TORNEO" selected="selected">Mama TORNEO</option>
-                </select>
-              </div>
-            </div>
-
-            <div class="col-md-6">
-              <div class="form-group">
-                <label for="monto-provision">Salón:</label>
-                <select id="maquinaria" class="form-control ">
-                  <option label="Papa TORNEO" value="string:Papa TORNEO">Papa TORNEO</option>
-                  <option label="Mama TORNEO" value="string:Mama TORNEO" selected="selected">Mama TORNEO</option>
-                </select>
-              </div>
-            </div>
+            </dl>
 
           </div>
         </div>
-        <div class="modal-footer text-left">
-          <button type="button" class="btn btn-primary">Guardar Cambios</button>
-          <button type="button" class="btn btn-secondary" data-dismiss="modal">
-            Cerrar</button>
-        </div>
-        <br>
-      </div>
-    </div>
-  </div>
 
-  <!-- <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
-    aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered" role="document">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title" id="exampleModalLongTitle">Equipo</h5>
-          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-            <span aria-hidden="true">&times;</span>
-          </button>
-        </div>
-        <div class="modal-body">
-          <div class="row">
+        <div class="row mt-5">
+          <div class="col-md-12">
 
-            <div class="col-md-12">
+            <h5 class="mb-4">After the tournament</h5>
 
-            </div>
-
+            <a   href="#">Download database </a>
           </div>
         </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-          <button type="button" class="btn btn-primary">Guardar</button>
+
+        <div class="row mt-5">
+          <div class="col-md-12">
+
+            <h5>User Management</h5>
+
+            <ul>
+              <li>
+                <a href="#">Change Password </a>
+              </li>
+
+              <li>
+                <a href="#">Create User </a>
+              </li>
+
+              <li>
+                <a href="#">Remove User </a>
+              </li>
+            </ul>
+          </div>
         </div>
+
+        <div class="row mt-5">
+          <div class="col-md-12">
+
+            <h5>Advanced</h5>
+
+            <p class="mt-4"> These links are for advanced users.</p>
+
+            <ul>
+              <li>
+                <a class="mt-4" href="#">Edit all parameters </a>
+              </li>
+
+              <li>
+                <p>
+                  Upload CSV or Excel of teams and tournaments to assign them to
+                </p>
+                <div class="form-group">
+
+                  <input type="file" class="form-control-file" id="exampleFormControlFile1">
+                </div>
+
+                <button type="button" class="btn btn-primary">
+
+                  Upload
+                </button>
+
+              </li>
+
+              <li>
+                <p>
+                  Upload CSV or Excel of updated information for teams
+                </p>
+                <div class="form-group">
+
+                  <input type="file" class="form-control-file" id="exampleFormControlFile1">
+                </div>
+
+                <button type="button" class="btn btn-primary">
+
+                  Upload
+                </button>
+
+              </li>
+            </ul>
+          </div>
+        </div>
+
+
       </div>
     </div>
-  </div> -->
-  <!-- /.container -->
+  </main>
 
   <!-- Footer -->
-  <footer class="py-5 bg-dark">
+  <footer class="py-5 bg-dark mt-5">
     <div class="container">
       <p class="m-0 text-center text-white">Copyright &copy; FLL 2019</p>
     </div>
